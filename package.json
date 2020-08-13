@@ -1,0 +1,22 @@
+{
+  "name": "readmegenerator",
+  "version": "1.0.0",
+  "description": "This command-line application uses inquirer to assist a developer in creating a quick and quality README",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hawenger/readmeGenerator.git"
+  },
+  "author": "Hannah Wenger",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hawenger/readmeGenerator/issues"
+  },
+  "homepage": "https://github.com/hawenger/readmeGenerator#readme",
+  "dependencies": {
+    "inquirer": "^7.3.3"
+  }
+}
