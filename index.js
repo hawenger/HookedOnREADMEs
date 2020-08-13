@@ -62,12 +62,13 @@ function writeText(answers) {
         # ${answers.title}
         ### ${answers.description}
         ##Table of Contents
-            ###
-            ###
-            ###
-            ###
-            ###
-            ###
+            ####*[Installation](##Installation)
+            ####*[Usage](##Usage)
+            ####*[License](##License)
+            ####*[Contributing](##Contributing)
+            ####*[Tests](##Tests)
+            ####*[Questions](##Questions)
+
         ##Installation
         ${answers.installation}
         ##Usage
@@ -81,6 +82,6 @@ function writeText(answers) {
         #### Github Profile
         **[${answers.username}](https://github.com/${answers.username})**
         #### Please submit questions to:
-        ***${answers.email}***
+        ***<${answers.email}>***
         `
 }
