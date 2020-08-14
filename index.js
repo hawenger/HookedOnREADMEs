@@ -71,31 +71,40 @@ inquirer
 
 function writeText(answers) {
     return `
-        # ${answers.title}
-        ##${answers.license}                  
-        ### ${answers.description}
-        ##Table of Contents
-            ####*[Installation](##Installation)
-            ####*[Usage](##Usage)
-            ####*[License](##License)
-            ####*[Contributing](##Contributing)
-            ####*[Tests](##Tests)
-            ####*[Questions](##Questions)
+# ${answers.title}
 
-        ##Installation
-        ${answers.installation}
-        ##Usage
-        ${answers.usage}
-        ##License
-        ${answers.license}
-        ##Contributing
-        ${answers.contributing}
-        ##Tests
-        ${answers.tests}
-        ##Questions
-        #### Github Profile
-        **[${answers.username}](https://github.com/${answers.username})**
-        #### Please submit questions to:
-        ***<${answers.email}>***
-        `
+#### ${answers.license}
+    
+#### ${answers.description}
+    
+### Table of Contents
+
+* [Installation](##Installation)
+* [Usage](##Usage)
+* [License](##License)
+* [Contributing](##Contributing)
+* [Tests](##Tests)
+* [Questions](##Questions)
+    
+## Installation
+${answers.installation}
+    
+## Usage
+${answers.usage}
+    
+## License
+${answers.license}
+    
+## Contributing
+${answers.contributing}
+    
+## Tests
+${answers.tests}
+    
+## Questions
+
+#### Github Profile
+[${answers.username}](https://github.com/${answers.username})
+#### Please submit questions to:
+<${answers.email}>`
 }
