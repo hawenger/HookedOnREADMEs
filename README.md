@@ -4,12 +4,12 @@
 #### Tired of writing up READMEs?  Feeling pressed for time?  This simple & easy to navigate README generator uses node and inquirer to guide a user through a series of prompts resulting in a crystal clear, cleanly formatted, README!
 
 ### Table of Contents
-* [Installation](## Installation)
-* [Usage](## Usage)
-* [License](## License)
-* [Contributing](## Contributing)
-* [Tests](## Tests)
-* [Questions](## Questions)
+* [Installation](##Installation)
+* [Usage](##Usage)
+* [License](##License)
+* [Contributing](##Contributing)
+* [Tests](##Tests)
+* [Questions](##Questions)
 
 ## Installation
 * Download package 
@@ -34,8 +34,8 @@ Tested by Hannah Wenger using node and vs code
         
 ## Questions
 #### Github Profile
- ** [hawenger](https://github.com/hawenger) **
+[hawenger](https://github.com/hawenger)
 #### Please submit questions to:
-*** <hamecow@gmail.com> ***
+<hamecow@gmail.com>
         
 
