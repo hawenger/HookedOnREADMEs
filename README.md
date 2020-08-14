@@ -1,4 +1,3 @@
-
 # Hooked On READMEs                  
 
 #### Tired of writing up READMEs?  Feeling pressed for time?  This simple & easy to navigate README generator uses node and inquirer to guide a user through a series of prompts resulting in a crystal clear, cleanly formatted, README!
@@ -37,5 +36,3 @@ Tested by Hannah Wenger using node and vs code
 [hawenger](https://github.com/hawenger)
 #### Please submit questions to:
 <hamecow@gmail.com>
-        
-
