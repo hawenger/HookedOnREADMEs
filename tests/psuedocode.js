@@ -33,3 +33,22 @@ if (checked.true) {
                                     return;
                                     const readme = generateReadme(answers);
                                 }
+
+
+                                class Prompt {
+                                    constructor(type, name, message) {
+                                        this.type = type;
+                                        this.name = name;
+                                        this.messsage = message;
+                                    }
+                                    displayQuestion() {
+                                        inquirer
+                                            .prompt([{
+                                                this.type,
+                                                this.name,
+                                                this.message
+                                            }])
+
+                                    };
+                                }
+                                const title = new Prompt('input', 'title', 'What is your project title?');
