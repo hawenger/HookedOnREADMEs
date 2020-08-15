@@ -1,54 +1,39 @@
-, {
-    type: 'input',
-    name: 'description',
-    message: 'Please describe your project'
-}, {
-    type: 'checkbox',
-    name: 'tableOfContents',
-    message: 'What do you want to include in your README?',
-    choices: [
-        { name: 'Installation', value: true, checked: true },
-        { name: 'Usage', value: true, checked: true },
-        { name: 'License', value: true, checked: true },
-        { name: 'Contributing', value: true, checked: true },
-        { name: 'Tests', value: true, checked: true },
-        { name: 'Questions', value: true, checked: true },
-    ]
-}]);
-if (checked.true) {
-    const name = new Question(true);
-
-    class Question {
-        constructor(checked) {
-            this.checked = true;
+class Question {
+    constructor(type, name, message) {
+        this.type = type;
+        this.name = name;
+        this.message = message;
+    }
+    displayQuestion() {
+        Question.foreach() {
+            [{
+                return this.type,
+                this.name,
+                this.message
+            }]
         }
-        displayQuestion() {
-                inquirer
-                    .prompt([{
-                                type: 'input',
-                                name: Question(true),
-                                message: $ { `Please enter ${Question} information` }
+        inquirer
+            .prompt([{
+                displayQuestion()
+            }])
 
-                                function generateReadme(answers) {
-                                    return;
-                                    const readme = generateReadme(answers);
-                                }
+    };
+}
+const title = new Question('input', 'title', 'What is your project title?');
+//const title = new Question('input', 'description', 'What is your project title?');
+//const title = new Question('input', 'installation', 'What is your project title?');
+//const title = new Question('input', 'usage', 'What is your project title?');
+//const title = new Question('input', 'contributing', 'What is your project title?');
+//const title = new Question('input', 'questions', 'What is your project title?');
 
-
-                                class Prompt {
-                                    constructor(type, name, message) {
-                                        this.type = type;
-                                        this.name = name;
-                                        this.messsage = message;
-                                    }
-                                    displayQuestion() {
-                                        inquirer
-                                            .prompt([{
-                                                this.type,
-                                                this.name,
-                                                this.message
-                                            }])
-
-                                    };
-                                }
-                                const title = new Prompt('input', 'title', 'What is your project title?');
+//            type: 'checkbox',
+//name: 'license',
+//message: 'What type of license do you have?',
+//choices: [
+//{ name: 'Apache 2.0', value: '[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)', checked: false },
+//{ name: 'Boost Software 1.0', value: '[![License](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)', checked: false },
+//{ name: 'The MIT', value: '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)', checked: false },
+//{ name: 'Eclipse Public License 1.0', value: '[![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0)', checked: false },
+//{ name: 'Other', value: 'Coming Soon', checked: false },
+//{ name: 'No License', value: 'No License', checked: false },
+//]
